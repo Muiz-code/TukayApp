@@ -9,12 +9,12 @@ import Image6 from "../assets/Line 6.png";
 
 const Section1 = () => {
   return (
-    <div className="col h-[89vh] container flex items-center justify-center">
-      <div className="col">
+    <div className="col h-[89vh] container sectionContainer flex items-center justify-center">
+      <div className="col text1">
         <p className="font-bold text-sm">
           Tukay Transactions has never been made faster
         </p>
-        <div className="text2">
+        <div className="text2 col">
           <h1>Transact Now At The Speed Of Light</h1>
         </div>
         <Button

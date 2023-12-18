@@ -1,17 +1,29 @@
 import "./App.css";
+import "./MediaQuery.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Section1 from "./Compnents/Section1";
-import Services from "./Compnents/Services";
-import NavBar from "./Compnents/NavBar";
-import HowItWorks from "./Compnents/HowItWorks";
+import LandingPage from "./Pages/LandingPage";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import SignUp from "./Pages/SignUp";
+import SignIn from "./Pages/SignIn";
 
 const App = () => {
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route>
+        <Route path="/" element={<LandingPage />}></Route>
+        <Route path="signUp" element={<SignUp />}></Route>
+        <Route path="signIn" element={<SignIn />}></Route>
+      </Route>
+    )
+  );
   return (
-    <div className="bg-[#D9D9D9]">
-      <NavBar />
-      <Section1 />
-      <Services />
-      <HowItWorks />
+    <div>
+      <RouterProvider router={router} />
     </div>
   );
 };

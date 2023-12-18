@@ -1,0 +1,52 @@
+@media (max-width: 500px) {
+  .imageContainer {
+    display: none;
+  }
+  .sectionContainer {
+    height: 100vh;
+    width: 100%;
+    background: url(./assets/chi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .text1 {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.342);
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+  }
+  .text2 {
+    background: linear-gradient(
+        106deg,
+        #10ff97 5.22%,
+        rgb(199, 196, 196) 70.57%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  .text2 h1 {
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    color: #004225;
+    font-weight: 700;
+  }
+  .text2 p {
+    text-align: center;
+  }
+  .servicesImage {
+    display: none;
+  }
+  .serviceCard {
+    display: flex;
+    flex-direction: column;
+  }
+  .serviceCardItem {
+    width: 100%;
+  }
+}
