@@ -8,6 +8,7 @@ import facebook from "../assets/FaceBook.svg";
 import gmail from "../assets/Gmail.svg";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   useEffect(() => {
@@ -18,11 +19,18 @@ const SignUp = () => {
       <div className="col-5" data-aos="zoom-in">
         <img src={Logo} alt="" />
       </div>
-      <div className="col bg-white rounded-2xl" data-aos="fade-up">
-        <Form className="h-[90vh] flex border flex-col items-center justify-center">
-          <Row className="mb-3 gap-5">
+      <div
+        className="col h-[98vh] bg-white px-2 py-5 rounded-2xl flex flex-col justify-center items-center"
+        data-aos="fade-up"
+      >
+        <h1 className="text-[#004225]">Sign Up</h1>
+        <p className="text-lg font-light">
+          Enter personal details below to create an account
+        </p>
+        <Form className=" flex flex-col items-center justify-center">
+          <Row className="mb-3 gap-5 w-100">
             <Form.Group as={Col} controlId="formGridName">
-              <Form.Label>First Name</Form.Label>
+              <Form.Label className="text-xl font-light">First Name</Form.Label>
               <Form.Control
                 className="input p-3"
                 type="text"
@@ -31,7 +39,7 @@ const SignUp = () => {
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridName">
-              <Form.Label>Last Name</Form.Label>
+              <Form.Label className="text-xl font-light">Last Name</Form.Label>
               <Form.Control
                 className="input p-3"
                 type="text"
@@ -39,9 +47,9 @@ const SignUp = () => {
               />
             </Form.Group>
           </Row>
-          <Row className="mb-3 gap-5">
+          <Row className="mb-3 gap-5 w-100">
             <Form.Group as={Col} controlId="formGridEmail">
-              <Form.Label>Email</Form.Label>
+              <Form.Label className="text-xl font-light">Email</Form.Label>
               <Form.Control
                 className="input p-3"
                 type="email"
@@ -49,7 +57,7 @@ const SignUp = () => {
               />
             </Form.Group>
             <Form.Group as={Col} controlId="formGridPhone">
-              <Form.Label>Phone No</Form.Label>
+              <Form.Label className="text-xl font-light">Phone No</Form.Label>
               <Form.Control
                 className="p-3"
                 type="phone"
@@ -58,9 +66,11 @@ const SignUp = () => {
             </Form.Group>
           </Row>
 
-          <Row className="mb-5 gap-5">
+          <Row className="mb-5 gap-5 w-100">
             <Form.Group as={Col} controlId="formGridPassword">
-              <Form.Label>Create Password</Form.Label>
+              <Form.Label className="text-xl font-light">
+                Create Password
+              </Form.Label>
               <Form.Control
                 className="input p-3"
                 type="password"
@@ -69,7 +79,9 @@ const SignUp = () => {
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridPassword">
-              <Form.Label>Confirm Password</Form.Label>
+              <Form.Label className="text-xl font-light">
+                Confirm Password
+              </Form.Label>
               <Form.Control
                 className="input p-3"
                 type="password"
@@ -77,14 +89,15 @@ const SignUp = () => {
               />
             </Form.Group>
           </Row>
-
-          <button
-            className="bg-[#004225] text-white px-5 py-3 rounded-xl"
-            type="submit"
-            data-aos="fade-up"
-          >
-            Sign Up
-          </button>
+          <Link to="/signin">
+            <button
+              className="bg-[#004225] text-white px-5 py-3 rounded-xl"
+              type="submit"
+              data-aos="fade-up"
+            >
+              Sign Up
+            </button>
+          </Link>
           <div>
             <p className="text-center">
               By click this, it means you have read and agrees with our <br />{" "}
@@ -120,7 +133,7 @@ const SignUp = () => {
             </div>
           </div>
         </Form>
-        <div className="border ps-5">
+        <div className="ps-5 mt-3">
           <p>
             Already have an account?{" "}
             <span>

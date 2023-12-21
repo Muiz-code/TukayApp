@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import SignUp from "./Pages/SignUp";
 import SignIn from "./Pages/SignIn";
+import Dashboard from "./Pages/Dashboard";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -17,7 +18,9 @@ const App = () => {
       <Route>
         <Route path="/" element={<LandingPage />}></Route>
         <Route path="signUp" element={<SignUp />}></Route>
+        <Route path="/signin" element={<SignIn />}></Route>
         <Route path="signIn" element={<SignIn />}></Route>
+        <Route path="/dashboard" element={<Dashboard />}></Route>
       </Route>
     )
   );

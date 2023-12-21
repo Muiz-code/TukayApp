@@ -1,0 +1,17 @@
+export { default as userIcon } from "../assets/User.svg";
+export { default as chartIcon } from "../assets/Chat.svg";
+export { default as toogleIcon } from "../assets/togglebar.svg";
+export { default as profileIcon } from "../assets/profile.svg";
+export { default as homeIcon } from "../assets/Home.svg";
+export { default as graphIcon } from "../assets/Graph.svg";
+export { default as setIcon } from "../assets/Setting.svg";
+export { default as categoryIcon } from "../assets/Category.svg";
+export { default as headphoneIcon } from "../assets/headphones.svg";
+export { default as bagIcons } from "../assets/Bag.svg";
+export { default as folderIcon } from "../assets/Folder.svg";
+export { default as giftIcon } from "../assets/gift.svg";
+export { default as chevronIcon } from "../assets/chevron-down.svg";
+export { default as notificationIcon } from "../assets/Notification.svg";
+export { default as graphsIcon } from "../assets/Graph2.svg";
+export { default as itemIcon } from "../assets/item1.png";
+export { default as itemsIcon } from "../assets/item2.png";
