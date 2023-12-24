@@ -2,7 +2,6 @@ import { useState } from "react";
 import { pages } from "./Dummy";
 import Page from "../Compnents/Page";
 import Logo from "../assets/signin logo.png";
-
 import { Outlet } from "react-router-dom";
 
 const Sidebar = () => {
@@ -41,7 +40,7 @@ const Sidebar = () => {
 
           <div
             className={`rounded-full absolute right-[-40px] bottom-[350px] bg-[#447460] w-[110px] h-[110px] border-2 border-[#fff] flex items-center justify-center cursor-pointer ${
-              sideBarIsOpen ? "w-[0%]" : "right-0 w-[30%]"
+              sideBarIsOpen ? "" : "right-0"
             }`}
             onClick={toogleSideBar}
           >
@@ -59,10 +58,6 @@ const Sidebar = () => {
             />
           ))}
         </ul>
-      </div>
-      <div className={`${sideBarIsOpen ? "w-[80%]" : "w-[90%]"}`}></div>
-      <div className={`${sideBarIsOpen ? "w-[80%]" : "w-[90%]"}`}>
-        <Outlet />
       </div>
     </div>
   );

@@ -99,7 +99,9 @@ const SignIn = () => {
           <p>
             Don’t have an account with us?{" "}
             <span>
-              <a href="">Create an account</a>
+              <Link to="/signUp">
+                <a href="">Create an account</a>
+              </Link>
             </span>{" "}
           </p>
         </div>

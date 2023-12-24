@@ -137,7 +137,9 @@ const SignUp = () => {
           <p>
             Already have an account?{" "}
             <span>
-              <a href="">Log in</a>
+              <Link to="/signIn">
+                <a href="">Log in</a>
+              </Link>
             </span>{" "}
           </p>
         </div>
