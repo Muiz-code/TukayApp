@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Logo from "../assets/logo.png";
+import logo from "../assets/Logo.png";
 import Button from "./Button";
 import { NavLink } from "react-router-dom";
 const NavBar = () => {
@@ -10,7 +10,7 @@ const NavBar = () => {
       <Navbar expand="lg" className="navBar p-2">
         <Container>
           <Navbar.Brand href="#home">
-            <img src={Logo} alt="" />
+            <img src={logo} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { pages } from "./Dummy";
 import Page from "../Compnents/Page";
 import Logo from "../assets/signin logo.png";
-import { Outlet } from "react-router-dom";
 
 const Sidebar = () => {
   let eachPage;
