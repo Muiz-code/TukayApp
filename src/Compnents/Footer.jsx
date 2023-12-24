@@ -2,7 +2,7 @@ import Icon1 from "../assets/Twitter.svg";
 import Icon2 from "../assets/FaceBook.svg";
 import Icon3 from "../assets/Instagram.svg";
 import FooterItems from "./FooterItems";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/Logo.png";
 
 const Footer = () => {
   return (
