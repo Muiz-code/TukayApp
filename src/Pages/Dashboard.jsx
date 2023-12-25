@@ -1,4 +1,3 @@
-import Sidebar from "../Compnents/Sidebar";
 import logo1 from "../assets/Ellipse 10.png";
 import wifi from "../assets/Wifi.svg";
 import sim from "../assets/Sim.svg";
@@ -18,9 +17,8 @@ import RCard from "../Compnents/RCard";
 
 const Dashboard = () => {
   return (
-    <div className="flex justify-end border h-[100vh]">
-      <Sidebar />
-      <div className="dashboard flex flex-col w-[80%] p-5 gap-4">
+    <div className="flex  border h-[100vh]">
+      <div className="dashboard flex flex-col p-5 gap-4">
         <div className="flex items-center gap-3">
           <img src={logo1} className="w-[7%]" alt="" />
           <div>
@@ -63,7 +61,7 @@ const Dashboard = () => {
                 <img src={eye1} alt="" />
               </div>
               <div className="flex  items-center btn1 justify-between">
-                <div className="flex gap-2 justify-center items-center text-[44px]">
+                <div className="flex gap-2 justify-center items-center text-[44px] font-bold">
                   <img src={naira} className="w-[35px]" alt="" />
                   2000
                 </div>

@@ -10,15 +10,15 @@ export const pages = [
     pages: "Home",
     pageLink: "/dashboard",
     style:
-      "bg-[#004225] rounded-lg hover:scale-95 text-white flex items-center",
+      "rounded-lg hover:scale-95 text-white flex items-center nn",
   },
   {
     id: 2,
     icon: history,
     pages: "Transfers",
-    pageLink: "order",
+    pageLink: "/transfer",
     style:
-      "hover:text-[#004225] rounded-lg hover:scale-[1.02] flex items-center",
+      "hover:text-[#004225] rounded-lg hover:scale-[1.02] nnn flex items-center",
   },
   {
     id: 3,

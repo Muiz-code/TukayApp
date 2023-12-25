@@ -3,9 +3,6 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import AOS from "aos";
-import line from "../assets/Line 11.png";
-import facebook from "../assets/FaceBook.svg";
-import gmail from "../assets/Gmail.svg";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -20,7 +17,7 @@ const SignUp = () => {
         <img src={Logo} alt="" />
       </div>
       <div
-        className="col h-[98vh] bg-white px-2 py-5 rounded-2xl flex flex-col justify-center items-center"
+        className="col  bg-white px-5 py-5 rounded-2xl flex flex-col "
         data-aos="fade-up"
       >
         <h1 className="text-[#004225]">Sign Up</h1>
@@ -107,33 +104,8 @@ const SignUp = () => {
               </span>
             </p>
           </div>
-          <div className="flex items-center gap-5">
-            <img src={line} className="h-[1px] w-[180px]" alt="" />
-            <div className="mt-3">
-              <p className="font-light">Or register with</p>
-            </div>
-            <img src={line} className="h-[1px] w-[180px]" alt="" />
-          </div>
-          <div className="flex w-[90%] justify-between">
-            <div>
-              <button className="flex items-center justify-between px-5 py-2 gap-2 shadow-lg rounded-lg">
-                <div>
-                  <img src={facebook} className="w-[50px]" alt="" />
-                </div>
-                <p className="mt-3 text-xl">facebook</p>
-              </button>
-            </div>
-            <div>
-              <button className="flex items-center justify-between px-5 py-2 gap-2 shadow-lg rounded-lg">
-                <div>
-                  <img src={gmail} className="w-[50px]" alt="" />
-                </div>
-                <p className="mt-3 text-xl">Gmail</p>
-              </button>
-            </div>
-          </div>
         </Form>
-        <div className="ps-5 mt-3">
+        <div className="mt-3">
           <p>
             Already have an account?{" "}
             <span>
