@@ -1,5 +1,5 @@
 import Dashboard from "../assets/MoneyDash.svg";
-import Settings from "../assets/Profile.svg";
+import Profile from "../assets/Profile.svg";
 import beggars from "../assets/Beggers.svg";
 import history from "../assets/Transaction.svg";
 
@@ -31,7 +31,7 @@ export const pages = [
 
   {
     id: 7,
-    icon: Settings,
+    icon: Profile,
     pages: "Profile",
     style:
       "bg-[#004230] hover:bg-[#093b2e67] hover:scale-95 rounded-lg mt-[23rem]",
