@@ -1,5 +1,5 @@
 import Dashboard from "../assets/MoneyDash.svg";
-import Settings from "../assets/Setting.svg";
+import Settings from "../assets/Profile.svg";
 import beggars from "../assets/Beggers.svg";
 import history from "../assets/Transaction.svg";
 
@@ -10,7 +10,7 @@ export const pages = [
     pages: "Home",
     pageLink: "/dashboard",
     style:
-      "rounded-lg hover:scale-95 text-white flex items-center nn",
+      "hover:text-[#004225] rounded-lg hover:scale-[1.02] flex items-center",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const pages = [
     pages: "Transfers",
     pageLink: "/transfer",
     style:
-      "hover:text-[#004225] rounded-lg hover:scale-[1.02] nnn flex items-center",
+      "hover:text-[#004225] rounded-lg hover:scale-[1.02] flex items-center",
   },
   {
     id: 3,
@@ -32,8 +32,8 @@ export const pages = [
   {
     id: 7,
     icon: Settings,
-    pages: "Settings",
+    pages: "Profile",
     style:
-      "bg-[#004230] hover:text-[#447460] hover:scale-95 rounded-lg mt-[23rem]",
+      "bg-[#004230] hover:bg-[#093b2e67] hover:scale-95 rounded-lg mt-[23rem]",
   },
 ];

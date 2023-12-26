@@ -13,11 +13,13 @@ import img2 from "../assets/Ellipse 5.png";
 import img3 from "../assets/Ellipse 6.png";
 import img4 from "../assets/Ellipse 7.png";
 import img5 from "../assets/Ellipse 8.png";
+import visa from "../assets/Visa.svg";
+
 import RCard from "../Compnents/RCard";
 
 const Dashboard = () => {
   return (
-    <div className="flex  border h-[100vh]">
+    <>
       <div className="dashboard flex flex-col p-5 gap-4">
         <div className="flex items-center gap-3">
           <img src={logo1} className="w-[7%]" alt="" />
@@ -30,7 +32,7 @@ const Dashboard = () => {
           <div className="atmCard p-4 flex flex-col justify-between items-center">
             <div className="flex justify-between items-center w-100">
               <img src={wifi} className="w-[30px]" alt="" />
-              <h1 className="text-light text-[30px]">VISA</h1>
+              <img src={visa} className="w-[70px]" alt="" />
             </div>
             <div className="flex flex-col justify-center items-center w-100">
               <div className="flex flex-col items-center lh-1 w-100">
@@ -72,19 +74,31 @@ const Dashboard = () => {
               </div>
             </div>
 
-            <div className="flex justify-between items-center balance shadow-2xl px-5 py-3">
-              <button className="p-2 w-[20%] shadow-2xl cursor-pointer rounded-2xl">
-                <img src={send} className="w-[100%]" alt="" />
-              </button>
-              <button className="p-2 w-[20%] shadow-2xl rounded-2xl">
-                <img src={beg} className="w-[100%]" alt="" />
-              </button>
-              <button className="p-2 w-[20%] shadow-2xl rounded-2xl">
-                <img src={borrow} className="w-[100%]" alt="" />
-              </button>
-              <button className="p-2 w-[20%] shadow-2xl rounded-lg">
-                <img src={find} className="w-[100%]" alt="" />
-              </button>
+            <div className="flex justify-between items-center balance shadow-2xl px-5 ">
+              <div className="flex flex-col items-center gap-2">
+                <button className="p-2 shadow-2xl cursor-pointer rounded-2xl">
+                  <img src={send} className="w-[100%]" alt="" />
+                </button>
+                <p>Send</p>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <button className="p-2 shadow-2xl rounded-2xl">
+                  <img src={beg} className="w-[100%]" alt="" />
+                </button>
+                <p>Request</p>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <button className="p-2 shadow-2xl rounded-2xl">
+                  <img src={borrow} className="w-[100%]" alt="" />
+                </button>
+                <p>Borrow</p>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <button className="p-2 shadow-2xl rounded-lg">
+                  <img src={find} className="w-[100%]" alt="" />
+                </button>
+                <p>Find Giver</p>
+              </div>
             </div>
           </div>
         </div>
@@ -109,7 +123,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
