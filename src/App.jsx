@@ -13,6 +13,9 @@ import SignIn from "./Pages/SignIn";
 import Dashboard from "./Pages/Dashboard";
 import Transfer from "./Pages/Transfer";
 import Sidebar from "./Compnents/Sidebar";
+import Transactions from "./Pages/Transactions";
+import Profile from "./Pages/Profile";
+import GiversList from "./Compnents/GiversList";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -25,6 +28,11 @@ const App = () => {
         <Route path="/" element={<Sidebar />}>
           <Route path="/dashboard" element={<Dashboard />}></Route>
           <Route path="/transfer" element={<Transfer />}></Route>
+          <Route path="" element={<Transfer />}>
+            <Route path="/givers" element={<GiversList />}></Route>
+          </Route>
+          <Route path="/transactions" element={<Transactions />}></Route>
+          <Route path="/profile" element={<Profile />}></Route>
         </Route>
       </Route>
     )

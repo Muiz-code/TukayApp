@@ -2,7 +2,6 @@ import logo1 from "../assets/Ellipse 10.png";
 import wifi from "../assets/Wifi.svg";
 import sim from "../assets/Sim.svg";
 import eye1 from "../assets/EyeCancel.svg";
-import naira from "../assets/Naira.svg";
 import plus from "../assets/Plus.svg";
 import send from "../assets/Send.svg";
 import find from "../assets/Find2k.svg";
@@ -14,7 +13,6 @@ import img3 from "../assets/Ellipse 6.png";
 import img4 from "../assets/Ellipse 7.png";
 import img5 from "../assets/Ellipse 8.png";
 import visa from "../assets/Visa.svg";
-
 import RCard from "../Compnents/RCard";
 
 const Dashboard = () => {
@@ -63,9 +61,8 @@ const Dashboard = () => {
                 <img src={eye1} alt="" />
               </div>
               <div className="flex  items-center btn1 justify-between">
-                <div className="flex gap-2 justify-center items-center text-[44px] font-bold">
-                  <img src={naira} className="w-[35px]" alt="" />
-                  2000
+                <div className="flex gap-2 justify-center items-center">
+                  <h1 className="text-[44px] font-bold">N2000</h1>
                 </div>
                 <button className="flex items-center justify-center p-2 h-50 border-2 border-[#447460] rounded-2xl text-dark gap-2">
                   <img src={plus} alt="" />

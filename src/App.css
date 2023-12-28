@@ -149,16 +149,21 @@
 }
 .balance {
   width: 500px;
-  height: 140px;
   flex-shrink: 0;
   border-radius: 20px;
-  background: #959494;
+  background: #fff;
 }
 .balance1 {
   width: 100%;
   flex-shrink: 0;
   border-radius: 20px;
   background: #fff;
+}
+.balance2 {
+  width: 500px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 20px 20px;
+  background: #004230;
 }
 .transfer {
   width: 500px;
@@ -172,6 +177,19 @@
     rgba(0, 66, 85, 0) 121.66%
   );
 }
-.hide{
+.transfer1 {
+  width: 500px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 20px 20px 0px 0px;
+  background: linear-gradient(
+    105deg,
+    #004230a9 49.03%,
+    rgba(0, 66, 85, 0.62) 95.62%,
+    rgba(0, 66, 85, 0) 121.66%
+  );
+}
+.hide {
   display: none;
 }
+

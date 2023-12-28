@@ -24,7 +24,7 @@ export const pages = [
     id: 3,
     icon: beggars,
     pages: "Transctions",
-    pageLink: "customer",
+    pageLink: "/transactions",
     style:
       "hover:text-[#004225] rounded-lg hover:scale-[1.02]  flex items-center",
   },
@@ -33,6 +33,7 @@ export const pages = [
     id: 7,
     icon: Profile,
     pages: "Profile",
+    pageLink: "/profile",
     style:
       "bg-[#004230] hover:bg-[#093b2e67] hover:scale-95 rounded-lg mt-[23rem]",
   },

@@ -3,7 +3,7 @@ const RCard = ({ text, image, style, style2 }) => {
     <div>
       <div className="flex flex-col items-center">
         <div className={style}>
-          <button className="flex justify-center items-center shadow-2xl  cursor-pointer rounded-full">
+          <button className="flex justify-center items-center cursor-pointer">
             <img
               src={image}
               className={`w-[100%] text-light ${style2}`}
