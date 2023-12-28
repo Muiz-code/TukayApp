@@ -1,3 +1,6 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import Card3 from "../Compnents/Card3";
 import arrow2 from "../assets/NavigateRightAsh.svg";
 import img1 from "../assets/Ellipse 4.png";
@@ -7,8 +10,11 @@ import img4 from "../assets/Ellipse 7.png";
 import img5 from "../assets/Ellipse 8.png";
 
 const GiversList = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="w-[50%]">
+    <div className="p-5 shadow-2xl" data-aos="fade-right">
       <h1 className="text-[30px]">Givers</h1>
       <div className="flex flex-col gap-2">
         <Card3

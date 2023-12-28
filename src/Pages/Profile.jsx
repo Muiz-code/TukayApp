@@ -1,3 +1,6 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import Card3 from "../Compnents/Card3";
 import img1 from "../assets/Ellipse 4.png";
 import img2 from "../assets/ProfileBlack.svg";
@@ -9,6 +12,9 @@ import img7 from "../assets/Logout.svg";
 import { Link } from "react-router-dom";
 
 const Profile = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="flex border h-[100vh] items-center pe-5 gap-10">
       <div className="flex flex-col">
@@ -48,7 +54,10 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <div className="w-[50%] flex flex-col items-center justify-center border p-5 shadow-md rounded-2xl gap-10">
+      <div
+        className="w-[50%] flex flex-col items-center justify-center border p-5 shadow-md rounded-2xl gap-10"
+        data-aos="fade-right"
+      >
         <div className="flex w-[100%] flex-col gap-3">
           <Card3
             cardStyle="hover:bg-[#004230] hover:text-[white] flex items-center w-100 gap-3 shadow-md px-4 rounded-2xl"
@@ -78,7 +87,7 @@ const Profile = () => {
             icon2={img3}
           />
           <Card3
-            cardStyle="hover:bg-[red] flex items-center w-100 gap-3 shadow-md px-4 rounded-2xl"
+            cardStyle="hover:bg-[red] hover:text-[white] flex items-center w-100 gap-3 shadow-md px-4 rounded-2xl"
             cardStyle1="flex items-center w-100 gap-3"
             icons={img6}
             iconStyle="w-[8%]"
