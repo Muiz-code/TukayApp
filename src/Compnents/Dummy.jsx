@@ -1,5 +1,5 @@
 import Dashboard from "../assets/MoneyDash.svg";
-import profile from "../assets/Profile.svg";
+
 import beggars from "../assets/Beggers.svg";
 import history from "../assets/Transaction.svg";
 
