@@ -55,7 +55,7 @@ const Dashboard = () => {
           </div>
 
           <div className="flex flex-col gap-3">
-            <div className="flex justify-center flex-col balance shadow-2xl px-4 py-3">
+            <div className="flex justify-center gap-3 flex-col balance shadow-2xl px-4 py-3">
               <div className="flex items-center border-bottom gap-2 ">
                 Available Balance
                 <img src={eye1} alt="" />
@@ -71,7 +71,7 @@ const Dashboard = () => {
               </div>
             </div>
 
-            <div className="flex justify-between items-center balance shadow-2xl px-5 ">
+            <div className="flex justify-between items-center balance shadow-2xl px-5 py-3">
               <div className="flex flex-col items-center gap-2">
                 <button className="p-2 shadow-2xl cursor-pointer rounded-2xl">
                   <img src={send} className="w-[100%]" alt="" />
