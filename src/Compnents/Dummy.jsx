@@ -31,7 +31,7 @@ export const pages = [
 
   {
     id: 7,
-    icon: profile,
+
     pages: "Profile",
     pageLink: "/profile",
     style:
